@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/core/services/permission.service.ts"],
+  "sourcesContent": ["import { Injectable } from '@angular/core';\r\nimport { AuthService } from './auth';\r\n\r\n@Injectable({\r\n  providedIn: 'root'\r\n})\r\nexport class PermissionService {\r\n  constructor(private authService: AuthService) {}\r\n\r\n  canEdit(): boolean {\r\n    return this.authService.isAdmin() || this.authService.isTeacher();\r\n  }\r\n\r\n  canDelete(): boolean {\r\n    return this.authService.isAdmin();\r\n  }\r\n\r\n  canView(): boolean {\r\n    return true; // All authenticated users can view\r\n  }\r\n\r\n  canManageUsers(): boolean {\r\n    return this.authService.isAdmin();\r\n  }\r\n  \r\n  onlyAdmin(): boolean {\r\n    return this.authService.isAdmin();\r\n  }\r\n}\r\n"],
+  "mappings": ";;;;;;;;;;;AAMM,IAAO,oBAAP,MAAO,mBAAiB;EACR;EAApB,YAAoB,aAAwB;AAAxB,SAAA,cAAA;EAA2B;EAE/C,UAAO;AACL,WAAO,KAAK,YAAY,QAAO,KAAM,KAAK,YAAY,UAAS;EACjE;EAEA,YAAS;AACP,WAAO,KAAK,YAAY,QAAO;EACjC;EAEA,UAAO;AACL,WAAO;EACT;EAEA,iBAAc;AACZ,WAAO,KAAK,YAAY,QAAO;EACjC;EAEA,YAAS;AACP,WAAO,KAAK,YAAY,QAAO;EACjC;;qCArBW,oBAAiB,mBAAA,WAAA,CAAA;EAAA;4EAAjB,oBAAiB,SAAjB,mBAAiB,WAAA,YAFhB,OAAM,CAAA;;;sEAEP,mBAAiB,CAAA;UAH7B;WAAW;MACV,YAAY;KACb;;;",
+  "names": []
+}

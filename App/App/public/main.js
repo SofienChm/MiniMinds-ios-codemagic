@@ -1,6 +1,6 @@
 import {
   provideIonicAngular
-} from "./chunk-Z4CVTZRC.js";
+} from "./chunk-6T32DAUD.js";
 import "./chunk-CSKJ3OEL.js";
 import "./chunk-T5LCTCQ6.js";
 import {
@@ -30,6 +30,9 @@ import {
   TenantFeatureService
 } from "./chunk-WNVYLB4C.js";
 import {
+  OfflineCacheService
+} from "./chunk-TVKEU73H.js";
+import {
   TranslateLoader,
   TranslateModule,
   TranslateService
@@ -41,7 +44,7 @@ import {
 import "./chunk-NEGRQ2LF.js";
 import {
   AuthService
-} from "./chunk-Y62O6ZFA.js";
+} from "./chunk-2FXTNIWG.js";
 import {
   Router,
   RouterOutlet,
@@ -2573,23 +2576,23 @@ var CHAT_FEATURE = featureGuard(FeatureCodes.CHAT);
 var routes = [
   {
     path: "",
-    loadComponent: () => import("./chunk-NDU5KYTS.js").then((m) => m.Landing),
+    loadComponent: () => import("./chunk-DBOYDTAV.js").then((m) => m.Landing),
     canActivate: [landingGuard],
     pathMatch: "full"
   },
   {
     path: "login",
-    loadComponent: () => import("./chunk-K5FKNXOL.js").then((m) => m.Login),
+    loadComponent: () => import("./chunk-VURXEBUP.js").then((m) => m.Login),
     canActivate: [noAuthGuard]
   },
   {
     path: "register",
-    loadComponent: () => import("./chunk-F5MMUBLH.js").then((m) => m.Register),
+    loadComponent: () => import("./chunk-YDWTRNEO.js").then((m) => m.Register),
     canActivate: [noAuthGuard]
   },
   {
     path: "forgot-password",
-    loadComponent: () => import("./chunk-CB3ZVG6P.js").then((m) => m.ForgotPasswordComponent),
+    loadComponent: () => import("./chunk-CNQSFRZK.js").then((m) => m.ForgotPasswordComponent),
     canActivate: [noAuthGuard]
   },
   {
@@ -2599,7 +2602,7 @@ var routes = [
   },
   {
     path: "request-demo",
-    loadComponent: () => import("./chunk-AGQ35BJV.js").then((m) => m.RequestDemo)
+    loadComponent: () => import("./chunk-Y43V5G7K.js").then((m) => m.RequestDemo)
   },
   {
     path: "about",
@@ -2616,224 +2619,224 @@ var routes = [
   // QR Action - Public route for deep linking (no auth guard, handles auth internally)
   {
     path: "qr-action/:code",
-    loadComponent: () => import("./chunk-S3N4BF3Z.js").then((m) => m.QrActionComponent)
+    loadComponent: () => import("./chunk-GLXSS7UM.js").then((m) => m.QrActionComponent)
   },
   {
     path: "",
-    loadComponent: () => import("./chunk-CCKMWLLT.js").then((m) => m.MainLayout),
+    loadComponent: () => import("./chunk-SFQEEFNV.js").then((m) => m.MainLayout),
     canActivate: [authGuard],
     children: [
       {
         path: "dashboard",
-        loadComponent: () => import("./chunk-RH5QJKDL.js").then((m) => m.Dashboard)
+        loadComponent: () => import("./chunk-UUKBN6YW.js").then((m) => m.Dashboard)
       },
       // Parent routes - Admin & Teacher only
       {
         path: "parents",
-        loadComponent: () => import("./chunk-C5ADXCQZ.js").then((m) => m.Parent),
+        loadComponent: () => import("./chunk-EFOHKCGO.js").then((m) => m.Parent),
         canActivate: [ADMIN_TEACHER]
       },
       {
         path: "parents/add",
-        loadComponent: () => import("./chunk-ALRRDCMU.js").then((m) => m.AddParentComponent),
+        loadComponent: () => import("./chunk-GAEISRXB.js").then((m) => m.AddParentComponent),
         canActivate: [ADMIN_TEACHER]
       },
       {
         path: "parents/edit/:id",
-        loadComponent: () => import("./chunk-3QTZGNZK.js").then((m) => m.EditParent),
+        loadComponent: () => import("./chunk-SYQMLSEJ.js").then((m) => m.EditParent),
         canActivate: [ADMIN_TEACHER]
       },
       {
         path: "parents/detail/:id",
-        loadComponent: () => import("./chunk-Z5IEPNZV.js").then((m) => m.ParentDetail)
+        loadComponent: () => import("./chunk-PR4FNBX2.js").then((m) => m.ParentDetail)
       },
       // Children routes - Admin & Teacher only
       {
         path: "children",
-        loadComponent: () => import("./chunk-E3LJAAYA.js").then((m) => m.Children)
+        loadComponent: () => import("./chunk-7NIN7WHA.js").then((m) => m.Children)
       },
       {
         path: "children/add",
-        loadComponent: () => import("./chunk-HNYKFFY6.js").then((m) => m.AddChildren),
+        loadComponent: () => import("./chunk-6XH7GJPT.js").then((m) => m.AddChildren),
         canActivate: [ADMIN_TEACHER]
       },
       {
         path: "children/edit/:id",
-        loadComponent: () => import("./chunk-TEQLXTJJ.js").then((m) => m.EditChildren)
+        loadComponent: () => import("./chunk-BJJZSBBO.js").then((m) => m.EditChildren)
       },
       {
         path: "children/detail/:id",
-        loadComponent: () => import("./chunk-W6FCPZFE.js").then((m) => m.ChildDetail)
+        loadComponent: () => import("./chunk-7JEKTFIP.js").then((m) => m.ChildDetail)
       },
       {
         path: "events",
-        loadComponent: () => import("./chunk-SKFSANRJ.js").then((m) => m.Event),
+        loadComponent: () => import("./chunk-DDALRZX7.js").then((m) => m.Event),
         canActivate: [EVENTS_FEATURE]
       },
       {
         path: "events/add",
-        loadComponent: () => import("./chunk-K3KATE5G.js").then((m) => m.AddEvent),
+        loadComponent: () => import("./chunk-O4OY7T7Z.js").then((m) => m.AddEvent),
         canActivate: [ADMIN_TEACHER, EVENTS_FEATURE]
       },
       {
         path: "events/edit/:id",
-        loadComponent: () => import("./chunk-YFTSMLCX.js").then((m) => m.EditEvent),
+        loadComponent: () => import("./chunk-GJOXSF7F.js").then((m) => m.EditEvent),
         canActivate: [EVENTS_FEATURE]
       },
       {
         path: "events/:id/participants",
-        loadComponent: () => import("./chunk-VPGTHRSZ.js").then((m) => m.EventParticipants),
+        loadComponent: () => import("./chunk-GMV4H4C6.js").then((m) => m.EventParticipants),
         canActivate: [EVENTS_FEATURE]
       },
       {
         path: "events/detail/:id",
-        loadComponent: () => import("./chunk-XPT3YUSS.js").then((m) => m.EventDetailComponent),
+        loadComponent: () => import("./chunk-63WVZYX7.js").then((m) => m.EventDetailComponent),
         canActivate: [EVENTS_FEATURE]
       },
       {
         path: "daily-activities",
-        loadComponent: () => import("./chunk-H37NQRJ6.js").then((m) => m.DailyActivities),
+        loadComponent: () => import("./chunk-CIDZ2HE5.js").then((m) => m.DailyActivities),
         canActivate: [DAILY_ACTIVITIES_FEATURE]
       },
       {
         path: "activities",
-        loadComponent: () => import("./chunk-H37NQRJ6.js").then((m) => m.DailyActivities),
+        loadComponent: () => import("./chunk-CIDZ2HE5.js").then((m) => m.DailyActivities),
         canActivate: [DAILY_ACTIVITIES_FEATURE]
       },
       {
         path: "activities/detail/:id",
-        loadComponent: () => import("./chunk-VHER7ZMA.js").then((m) => m.ActivityDetail),
+        loadComponent: () => import("./chunk-SMW6TZXP.js").then((m) => m.ActivityDetail),
         canActivate: [DAILY_ACTIVITIES_FEATURE]
       },
       // Attendance routes - Admin & Teacher only
       {
         path: "attendance",
-        loadComponent: () => import("./chunk-ZRXFOD5X.js").then((m) => m.AttendanceSheet),
+        loadComponent: () => import("./chunk-M7R23AX2.js").then((m) => m.AttendanceSheet),
         canActivate: [ADMIN_TEACHER]
       },
       {
         path: "attendance-list",
-        loadComponent: () => import("./chunk-MJ325GIB.js").then((m) => m.AttendanceList),
+        loadComponent: () => import("./chunk-MB5LXJUB.js").then((m) => m.AttendanceList),
         canActivate: [ADMIN_TEACHER]
       },
       {
         path: "calendar",
-        loadComponent: () => import("./chunk-WTA7SRG2.js").then((m) => m.CalendarPageComponent)
+        loadComponent: () => import("./chunk-5OFOSN4D.js").then((m) => m.CalendarPageComponent)
       },
       {
         path: "holidays",
-        loadComponent: () => import("./chunk-62YWWUBN.js").then((m) => m.HolidayComponent),
+        loadComponent: () => import("./chunk-VFV63NBH.js").then((m) => m.HolidayComponent),
         canActivate: [ADMIN_TEACHER, HOLIDAYS_FEATURE]
       },
       {
         path: "holidays/add",
-        loadComponent: () => import("./chunk-OMV3ZBGN.js").then((m) => m.AddHolidayComponent),
+        loadComponent: () => import("./chunk-CZ2ZVZUU.js").then((m) => m.AddHolidayComponent),
         canActivate: [HOLIDAYS_FEATURE]
       },
       {
         path: "holidays/edit/:id",
-        loadComponent: () => import("./chunk-6K2QZ3CO.js").then((m) => m.EditHolidayComponent),
+        loadComponent: () => import("./chunk-F3U42OOQ.js").then((m) => m.EditHolidayComponent),
         canActivate: [HOLIDAYS_FEATURE]
       },
       // Leaves routes - Admin & Teacher only
       {
         path: "leaves",
-        loadComponent: () => import("./chunk-YTDBK5D2.js").then((m) => m.Leaves),
+        loadComponent: () => import("./chunk-2FZIXTUV.js").then((m) => m.Leaves),
         canActivate: [ADMIN_TEACHER, LEAVES_FEATURE]
       },
       {
         path: "leaves/add",
-        loadComponent: () => import("./chunk-J6FSEAMU.js").then((m) => m.AddLeave),
+        loadComponent: () => import("./chunk-FFIZQQ2H.js").then((m) => m.AddLeave),
         canActivate: [ADMIN_TEACHER, LEAVES_FEATURE]
       },
       {
         path: "fees",
-        loadComponent: () => import("./chunk-7DADM5SH.js").then((m) => m.FeeComponent),
+        loadComponent: () => import("./chunk-HHR6YU2L.js").then((m) => m.FeeComponent),
         canActivate: [roleGuard("Admin", "Parent"), FEES_FEATURE]
       },
       {
         path: "fees/add",
-        loadComponent: () => import("./chunk-3ZU5NABC.js").then((m) => m.AddFeeComponent),
+        loadComponent: () => import("./chunk-Z6Y7JIOS.js").then((m) => m.AddFeeComponent),
         canActivate: [roleGuard("Admin", "Parent"), FEES_FEATURE]
       },
       {
         path: "fees/edit/:id",
-        loadComponent: () => import("./chunk-XIQ4RF7J.js").then((m) => m.FeeEditComponent),
+        loadComponent: () => import("./chunk-JD3XGE6P.js").then((m) => m.FeeEditComponent),
         canActivate: [roleGuard("Admin", "Parent"), FEES_FEATURE]
       },
       {
         path: "fees/detail/:id",
-        loadComponent: () => import("./chunk-SZFVW7GI.js").then((m) => m.FeeDetailComponent),
+        loadComponent: () => import("./chunk-O6ABHZQ5.js").then((m) => m.FeeDetailComponent),
         canActivate: [roleGuard("Admin", "Parent"), FEES_FEATURE]
       },
       // Educator routes - Admin & Teacher only
       {
         path: "educators",
-        loadComponent: () => import("./chunk-OCRF5AD7.js").then((m) => m.Educator),
+        loadComponent: () => import("./chunk-PLHMAEP7.js").then((m) => m.Educator),
         canActivate: [ADMIN_TEACHER]
       },
       {
         path: "educators/add",
-        loadComponent: () => import("./chunk-6YZHGJA6.js").then((m) => m.AddEducator),
+        loadComponent: () => import("./chunk-JUH7C4F3.js").then((m) => m.AddEducator),
         canActivate: [ADMIN_TEACHER]
       },
       {
         path: "educators/edit/:id",
-        loadComponent: () => import("./chunk-AJ545C5L.js").then((m) => m.EditEducator),
+        loadComponent: () => import("./chunk-NV443AT5.js").then((m) => m.EditEducator),
         canActivate: [ADMIN_TEACHER]
       },
       {
         path: "educators/detail/:id",
-        loadComponent: () => import("./chunk-MONLE623.js").then((m) => m.EducatorDetail),
+        loadComponent: () => import("./chunk-CT2X3YF2.js").then((m) => m.EducatorDetail),
         canActivate: [ADMIN_TEACHER]
       },
       {
         path: "profile",
-        loadComponent: () => import("./chunk-FVFB5ALV.js").then((m) => m.EditProfile)
+        loadComponent: () => import("./chunk-7PV6EXYX.js").then((m) => m.EditProfile)
       },
       {
         path: "basic-ai",
-        loadComponent: () => import("./chunk-XXTUQJ7L.js").then((m) => m.BasicAIComponent),
+        loadComponent: () => import("./chunk-5NX7BQ5J.js").then((m) => m.BasicAIComponent),
         canActivate: [BASIC_AI_FEATURE]
       },
       {
         path: "ai-assistant",
-        loadComponent: () => import("./chunk-PK575VO2.js").then((m) => m.AIAssistantComponent),
+        loadComponent: () => import("./chunk-UPOJL5G7.js").then((m) => m.AIAssistantComponent),
         canActivate: [AI_ASSISTANT_FEATURE]
       },
       {
         path: "messages",
-        loadComponent: () => import("./chunk-46OII262.js").then((m) => m.MessagesComponent)
+        loadComponent: () => import("./chunk-ZWF2GYGX.js").then((m) => m.MessagesComponent)
       },
       {
         path: "chat",
-        loadComponent: () => import("./chunk-YDVN6TTM.js").then((m) => m.ChatComponent),
+        loadComponent: () => import("./chunk-MQKXLJWQ.js").then((m) => m.ChatComponent),
         canActivate: [CHAT_FEATURE]
       },
       {
         path: "profile/edit",
-        loadComponent: () => import("./chunk-FVFB5ALV.js").then((m) => m.EditProfile)
+        loadComponent: () => import("./chunk-7PV6EXYX.js").then((m) => m.EditProfile)
       },
       // Settings - Admin & Teacher only
       {
         path: "settings",
-        loadComponent: () => import("./chunk-P2ZAXWYN.js").then((m) => m.SettingsComponent),
+        loadComponent: () => import("./chunk-XC6RI4HO.js").then((m) => m.SettingsComponent),
         canActivate: [ADMIN_TEACHER]
       },
       // Classes routes - Admin & Teacher only
       {
         path: "classes",
-        loadComponent: () => import("./chunk-QKGXHCHN.js").then((m) => m.ClassesComponent),
+        loadComponent: () => import("./chunk-3HFWSSVU.js").then((m) => m.ClassesComponent),
         canActivate: [ADMIN_TEACHER]
       },
       {
         path: "classes/add",
-        loadComponent: () => import("./chunk-2ZTYOYZ7.js").then((m) => m.AddClassComponent),
+        loadComponent: () => import("./chunk-KWOMT34Z.js").then((m) => m.AddClassComponent),
         canActivate: [ADMIN_TEACHER]
       },
       {
         path: "classes/detail/:id",
-        loadComponent: () => import("./chunk-GIUFRYS7.js").then((m) => m.ClassDetailComponent),
+        loadComponent: () => import("./chunk-RGAU3SVZ.js").then((m) => m.ClassDetailComponent),
         canActivate: [ADMIN_TEACHER]
       },
       {
@@ -2843,105 +2846,105 @@ var routes = [
       },
       {
         path: "reclamations",
-        loadComponent: () => import("./chunk-AHS7RCFA.js").then((m) => m.ReclamationsComponent),
+        loadComponent: () => import("./chunk-VUM4FN5Z.js").then((m) => m.ReclamationsComponent),
         canActivate: [RECLAMATIONS_FEATURE]
       },
       // Appointments routes - All authenticated users
       {
         path: "appointments",
-        loadComponent: () => import("./chunk-NTY3AKVH.js").then((m) => m.Appointments)
+        loadComponent: () => import("./chunk-BUQSRMYH.js").then((m) => m.Appointments)
       },
       {
         path: "appointments/add",
-        loadComponent: () => import("./chunk-DAQBBSI5.js").then((m) => m.AddAppointment),
+        loadComponent: () => import("./chunk-3IZHMTLB.js").then((m) => m.AddAppointment),
         canActivate: [roleGuard("Parent")]
       },
       {
         path: "appointments/edit/:id",
-        loadComponent: () => import("./chunk-7MJLR6DS.js").then((m) => m.EditAppointment),
+        loadComponent: () => import("./chunk-U5XRUT75.js").then((m) => m.EditAppointment),
         canActivate: [roleGuard("Parent")]
       },
       {
         path: "appointments/detail/:id",
-        loadComponent: () => import("./chunk-7GSYKHZG.js").then((m) => m.AppointmentDetail)
+        loadComponent: () => import("./chunk-LVQTBDKH.js").then((m) => m.AppointmentDetail)
       },
       // Static Fees routes - Admin & Parent only
       {
         path: "static-fees",
-        loadComponent: () => import("./chunk-KEBA32FX.js").then((m) => m.StaticFeesComponent),
+        loadComponent: () => import("./chunk-Y3UDMPRO.js").then((m) => m.StaticFeesComponent),
         canActivate: [roleGuard("Admin", "Parent"), FEES_FEATURE]
       },
       {
         path: "static-fees/add",
-        loadComponent: () => import("./chunk-ITX6OBF7.js").then((m) => m.AddStaticFeeComponent),
+        loadComponent: () => import("./chunk-X4N3U7DH.js").then((m) => m.AddStaticFeeComponent),
         canActivate: [roleGuard("Admin", "Parent"), FEES_FEATURE]
       },
       {
         path: "static-fees/:id",
-        loadComponent: () => import("./chunk-KI7V3M4G.js").then((m) => m.StaticFeeDetailComponent),
+        loadComponent: () => import("./chunk-DCDPSNO4.js").then((m) => m.StaticFeeDetailComponent),
         canActivate: [roleGuard("Admin", "Parent"), FEES_FEATURE]
       },
       {
         path: "gallery",
-        loadComponent: () => import("./chunk-4HDVCQSH.js").then((m) => m.Gallery),
+        loadComponent: () => import("./chunk-IEGTSHGQ.js").then((m) => m.Gallery),
         canActivate: [GALLERY_FEATURE]
       },
       {
         path: "food-menu",
-        loadComponent: () => import("./chunk-ZLSSKOWN.js").then((m) => m.FoodMenuComponent),
+        loadComponent: () => import("./chunk-ABRRZGUA.js").then((m) => m.FoodMenuComponent),
         canActivate: [FOOD_MENU_FEATURE]
       },
       {
         path: "food-menu/add",
-        loadComponent: () => import("./chunk-KS7TMZXL.js").then((m) => m.AddMenuComponent),
+        loadComponent: () => import("./chunk-UT2G6GC7.js").then((m) => m.AddMenuComponent),
         canActivate: [FOOD_MENU_FEATURE]
       },
       {
         path: "food-menu/edit/:id",
-        loadComponent: () => import("./chunk-KS7TMZXL.js").then((m) => m.AddMenuComponent),
+        loadComponent: () => import("./chunk-UT2G6GC7.js").then((m) => m.AddMenuComponent),
         canActivate: [FOOD_MENU_FEATURE]
       },
       {
         path: "food-menu/food-items",
-        loadComponent: () => import("./chunk-SE5G2HRA.js").then((m) => m.FoodItemsComponent),
+        loadComponent: () => import("./chunk-7K7NGQOV.js").then((m) => m.FoodItemsComponent),
         canActivate: [FOOD_MENU_FEATURE]
       },
       {
         path: "food-menu/parent",
-        loadComponent: () => import("./chunk-H6Q7RGSF.js").then((m) => m.ParentMenuViewComponent),
+        loadComponent: () => import("./chunk-LDHS3CLG.js").then((m) => m.ParentMenuViewComponent),
         canActivate: [FOOD_MENU_FEATURE]
       },
       {
         path: "food-menu/detail/:id",
-        loadComponent: () => import("./chunk-AGS337UX.js").then((m) => m.MenuDetailComponent),
+        loadComponent: () => import("./chunk-QRKQ66QG.js").then((m) => m.MenuDetailComponent),
         canActivate: [FOOD_MENU_FEATURE]
       },
       {
         path: "food-menu/report/:id",
-        loadComponent: () => import("./chunk-GA6K46E7.js").then((m) => m.MenuReportComponent),
+        loadComponent: () => import("./chunk-6W5AOGRW.js").then((m) => m.MenuReportComponent),
         canActivate: [FOOD_MENU_FEATURE]
       },
       {
         path: "notifications",
-        loadComponent: () => import("./chunk-5ANB3UNA.js").then((m) => m.NotificationsComponent)
+        loadComponent: () => import("./chunk-FR3NMIQU.js").then((m) => m.NotificationsComponent)
       },
       {
         path: "notification-settings",
-        loadComponent: () => import("./chunk-B2BG6N6M.js").then((m) => m.NotificationSettingsComponent)
+        loadComponent: () => import("./chunk-RP5JBGH6.js").then((m) => m.NotificationSettingsComponent)
       },
       {
         path: "profile-menu",
-        loadComponent: () => import("./chunk-YJDQRMOU.js").then((m) => m.ProfileMenuComponent)
+        loadComponent: () => import("./chunk-XOXRGMD2.js").then((m) => m.ProfileMenuComponent)
       },
       {
         path: "qr-checkin",
-        loadComponent: () => import("./chunk-SJJA4JPZ.js").then((m) => m.QrCheckin),
+        loadComponent: () => import("./chunk-46XQBLFL.js").then((m) => m.QrCheckin),
         canActivate: [QR_CHECKIN_FEATURE]
       },
       // QR Management - Admin & Teacher only
       {
         path: "qr-management",
-        loadComponent: () => import("./chunk-HNAPU7E4.js").then((m) => m.QrManagement),
+        loadComponent: () => import("./chunk-ME7OEOJE.js").then((m) => m.QrManagement),
         canActivate: [ADMIN_TEACHER, QR_CHECKIN_FEATURE]
       },
       {
@@ -2951,49 +2954,49 @@ var routes = [
       // SuperAdmin routes
       {
         path: "super-admin/dashboard",
-        loadComponent: () => import("./chunk-KO4WFO2M.js").then((m) => m.SuperAdminDashboard),
+        loadComponent: () => import("./chunk-IHSJWDPQ.js").then((m) => m.SuperAdminDashboard),
         canActivate: [SUPER_ADMIN_ONLY]
       },
       {
         path: "super-admin/tenants",
-        loadComponent: () => import("./chunk-ARQ4OW56.js").then((m) => m.Tenants),
+        loadComponent: () => import("./chunk-YCZGMJII.js").then((m) => m.Tenants),
         canActivate: [SUPER_ADMIN_ONLY]
       },
       {
         path: "super-admin/tenants/add",
-        loadComponent: () => import("./chunk-4OMARBPY.js").then((m) => m.AddTenant),
+        loadComponent: () => import("./chunk-PTE55DF5.js").then((m) => m.AddTenant),
         canActivate: [SUPER_ADMIN_ONLY]
       },
       {
         path: "super-admin/tenants/edit/:id",
-        loadComponent: () => import("./chunk-4OMARBPY.js").then((m) => m.AddTenant),
+        loadComponent: () => import("./chunk-PTE55DF5.js").then((m) => m.AddTenant),
         canActivate: [SUPER_ADMIN_ONLY]
       },
       {
         path: "super-admin/tenants/detail/:id",
-        loadComponent: () => import("./chunk-XRAS6DDV.js").then((m) => m.TenantDetail),
+        loadComponent: () => import("./chunk-MWEXV4FA.js").then((m) => m.TenantDetail),
         canActivate: [SUPER_ADMIN_ONLY]
       },
       {
         path: "super-admin/tenants/:id/features",
-        loadComponent: () => import("./chunk-SMUQRQWE.js").then((m) => m.TenantFeatures),
+        loadComponent: () => import("./chunk-BRW6W37G.js").then((m) => m.TenantFeatures),
         canActivate: [SUPER_ADMIN_ONLY]
       },
       // SuperAdmin Billing routes
       {
         path: "super-admin/billing",
-        loadComponent: () => import("./chunk-Q3XZTQEK.js").then((m) => m.Billing),
+        loadComponent: () => import("./chunk-ER6RH24Y.js").then((m) => m.Billing),
         canActivate: [SUPER_ADMIN_ONLY]
       },
       {
         path: "super-admin/billing/:id",
-        loadComponent: () => import("./chunk-KBOOY6DA.js").then((m) => m.BillingDetail),
+        loadComponent: () => import("./chunk-O6CIN4CW.js").then((m) => m.BillingDetail),
         canActivate: [SUPER_ADMIN_ONLY]
       },
       // SuperAdmin Demo Requests
       {
         path: "super-admin/demo-requests",
-        loadComponent: () => import("./chunk-IBC2DBUE.js").then((m) => m.DemoRequests),
+        loadComponent: () => import("./chunk-L2HAHXEL.js").then((m) => m.DemoRequests),
         canActivate: [SUPER_ADMIN_ONLY]
       },
       {
@@ -3005,19 +3008,19 @@ var routes = [
   },
   {
     path: "404",
-    loadComponent: () => import("./chunk-Q2SJK5TR.js").then((m) => m.NotFoundComponent)
+    loadComponent: () => import("./chunk-FWZV3OGR.js").then((m) => m.NotFoundComponent)
   },
   {
     path: "403",
-    loadComponent: () => import("./chunk-YQXBEXDX.js").then((m) => m.ForbiddenComponent)
+    loadComponent: () => import("./chunk-VU36QRMA.js").then((m) => m.ForbiddenComponent)
   },
   {
     path: "500",
-    loadComponent: () => import("./chunk-YQXBEXDX.js").then((m) => m.ForbiddenComponent)
+    loadComponent: () => import("./chunk-VU36QRMA.js").then((m) => m.ForbiddenComponent)
   },
   {
     path: "**",
-    loadComponent: () => import("./chunk-Q2SJK5TR.js").then((m) => m.NotFoundComponent)
+    loadComponent: () => import("./chunk-FWZV3OGR.js").then((m) => m.NotFoundComponent)
   }
 ];
 
@@ -3569,225 +3572,6 @@ function getRequestDescription(req) {
   return `${method} /${endpoint}${bodyInfo}`;
 }
 
-// src/app/core/services/offline-cache.service.ts
-var OfflineCacheService = class _OfflineCacheService {
-  STORAGE_KEY = "miniminds_http_cache";
-  DEFAULT_TTL = 36e5;
-  // 1 hour in milliseconds
-  MAX_CACHE_ENTRIES = 50;
-  // Limit cache entries to prevent quota issues
-  cache = /* @__PURE__ */ new Map();
-  constructor() {
-    this.loadCache();
-    this.cleanExpiredCache();
-  }
-  /**
-   * Cache a GET response
-   */
-  set(url, response, ttl = this.DEFAULT_TTL) {
-    if (this.cache.size >= this.MAX_CACHE_ENTRIES && !this.cache.has(url)) {
-      this.clearOldest(5);
-    }
-    const cached = {
-      url,
-      response,
-      timestamp: Date.now(),
-      expiresAt: Date.now() + ttl
-    };
-    this.cache.set(url, cached);
-    this.saveCache();
-  }
-  /**
-   * Get cached response
-   */
-  get(url) {
-    const cached = this.cache.get(url);
-    if (!cached) {
-      return null;
-    }
-    if (Date.now() > cached.expiresAt) {
-      this.cache.delete(url);
-      this.saveCache();
-      return null;
-    }
-    return cached.response;
-  }
-  /**
-   * Check if URL has cached response
-   */
-  has(url) {
-    return this.get(url) !== null;
-  }
-  /**
-   * Get cache age in milliseconds
-   */
-  getCacheAge(url) {
-    const cached = this.cache.get(url);
-    if (!cached) {
-      return null;
-    }
-    return Date.now() - cached.timestamp;
-  }
-  /**
-   * Get human-readable cache age
-   */
-  getCacheAgeString(url) {
-    const age = this.getCacheAge(url);
-    if (age === null) {
-      return null;
-    }
-    const minutes = Math.floor(age / 6e4);
-    const hours = Math.floor(minutes / 60);
-    if (hours > 0) {
-      return `${hours} hour${hours > 1 ? "s" : ""} ago`;
-    } else if (minutes > 0) {
-      return `${minutes} minute${minutes > 1 ? "s" : ""} ago`;
-    } else {
-      return "just now";
-    }
-  }
-  /**
-   * Clear cache for specific URL
-   */
-  delete(url) {
-    this.cache.delete(url);
-    this.saveCache();
-  }
-  /**
-   * Clear all cache
-   */
-  clear() {
-    this.cache.clear();
-    localStorage.removeItem(this.STORAGE_KEY);
-  }
-  /**
-   * Get all cached URLs
-   */
-  getCachedUrls() {
-    return Array.from(this.cache.keys());
-  }
-  /**
-   * Get cache size
-   */
-  getSize() {
-    return this.cache.size;
-  }
-  /**
-   * Load cache from localStorage
-   */
-  loadCache() {
-    try {
-      const stored = localStorage.getItem(this.STORAGE_KEY);
-      if (!stored) {
-        return;
-      }
-      const parsed = JSON.parse(stored);
-      parsed.forEach((item) => {
-        const response = new HttpResponse({
-          body: item.response.body,
-          headers: item.response.headers,
-          status: item.response.status,
-          statusText: item.response.statusText,
-          url: item.response.url
-        });
-        this.cache.set(item.url, {
-          url: item.url,
-          response,
-          timestamp: item.timestamp,
-          expiresAt: item.expiresAt
-        });
-      });
-      console.log(`[OfflineCache] Loaded ${this.cache.size} cached responses`);
-    } catch (error) {
-      console.error("[OfflineCache] Error loading cache:", error);
-      this.cache.clear();
-    }
-  }
-  /**
-   * Save cache to localStorage
-   */
-  saveCache(retryCount = 0) {
-    const MAX_RETRIES = 3;
-    try {
-      const serializable = Array.from(this.cache.values()).map((item) => ({
-        url: item.url,
-        response: {
-          body: item.response.body,
-          headers: this.serializeHeaders(item.response.headers),
-          status: item.response.status,
-          statusText: item.response.statusText,
-          url: item.response.url
-        },
-        timestamp: item.timestamp,
-        expiresAt: item.expiresAt
-      }));
-      localStorage.setItem(this.STORAGE_KEY, JSON.stringify(serializable));
-    } catch (error) {
-      if (error instanceof DOMException && (error.name === "QuotaExceededError" || error.code === 22)) {
-        if (retryCount < MAX_RETRIES) {
-          console.warn(`[OfflineCache] Storage quota exceeded, clearing old cache (attempt ${retryCount + 1}/${MAX_RETRIES})`);
-          this.clearOldest(10);
-          this.saveCache(retryCount + 1);
-        } else {
-          console.warn("[OfflineCache] Storage quota still exceeded after retries, clearing all cache");
-          this.cache.clear();
-          localStorage.removeItem(this.STORAGE_KEY);
-        }
-      } else {
-        console.error("[OfflineCache] Error saving cache:", error);
-      }
-    }
-  }
-  /**
-   * Serialize headers for storage
-   */
-  serializeHeaders(headers) {
-    const serialized = {};
-    headers.keys().forEach((key) => {
-      serialized[key] = headers.get(key);
-    });
-    return serialized;
-  }
-  /**
-   * Clean expired cache entries
-   */
-  cleanExpiredCache() {
-    let expiredCount = 0;
-    const now = Date.now();
-    this.cache.forEach((cached, url) => {
-      if (now > cached.expiresAt) {
-        this.cache.delete(url);
-        expiredCount++;
-      }
-    });
-    if (expiredCount > 0) {
-      console.log(`[OfflineCache] Cleaned ${expiredCount} expired entries`);
-      this.saveCache();
-    }
-  }
-  /**
-   * Clear oldest cache entries
-   */
-  clearOldest(count) {
-    const entries = Array.from(this.cache.entries()).sort(([, a], [, b]) => a.timestamp - b.timestamp);
-    for (let i = 0; i < Math.min(count, entries.length); i++) {
-      this.cache.delete(entries[i][0]);
-    }
-  }
-  static \u0275fac = function OfflineCacheService_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _OfflineCacheService)();
-  };
-  static \u0275prov = /* @__PURE__ */ \u0275\u0275defineInjectable({ token: _OfflineCacheService, factory: _OfflineCacheService.\u0275fac, providedIn: "root" });
-};
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(OfflineCacheService, [{
-    type: Injectable,
-    args: [{
-      providedIn: "root"
-    }]
-  }], () => [], null);
-})();
-
 // src/app/core/interceptors/cache.interceptor.ts
 var SKIP_CACHE = "X-Skip-Cache";
 var MAX_CACHE_SIZE = 500 * 1024;
@@ -3797,7 +3581,11 @@ var NO_CACHE_PATTERNS = [
   // Individual photo fetch
   /\/photos\/download/,
   /imageData/i,
-  /fullImage/i
+  /fullImage/i,
+  /\/i18n\//,
+  // Translation files - always fetch fresh so updates show immediately
+  /\/tenantfeatures\//
+  // Feature flags - dynamic, must never be stale
 ];
 var cacheInterceptor = (req, next) => {
   const cacheService = inject(OfflineCacheService);
