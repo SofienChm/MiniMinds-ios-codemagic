@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/shared/components/skeleton/skeleton-child-card.component.ts"],
+  "sourcesContent": ["\n    .skeleton-card {\n      animation: fadeIn 0.3s ease-out;\n    }\n\n    @keyframes fadeIn {\n      from {\n        opacity: 0;\n        transform: translateY(10px);\n      }\n      to {\n        opacity: 1;\n        transform: translateY(0);\n      }\n    }\n  "],
+  "mappings": ";AACI,CAAA;AACE,aAAA,OAAA,KAAA;;AAGF,WAHE;AAIA;AACE,aAAA;AACA,eAAA,WAAA;;AAEF;AACE,aAAA;AACA,eAAA,WAAA;;;",
+  "names": []
+}

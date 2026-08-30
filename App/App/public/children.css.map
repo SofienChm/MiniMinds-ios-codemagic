@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/features/children/children.scss"],
+  "sourcesContent": ["::ng-deep.parent-detailchild .header-info{\r\n  margin-bottom: 55px;\r\n}"],
+  "mappings": ";AAAA,UAAA,CAAA,mBAAA,CAAA;AACE,iBAAA;;",
+  "names": []
+}

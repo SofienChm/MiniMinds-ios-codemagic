@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/shared/components/language-selector/language-selector.scss"],
+  "sourcesContent": [".btn-header {\r\n    width: 2.313rem;\r\n    height: 2.313rem;\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  padding: 0;\r\n  border-radius: 0.5rem;\r\n  border:1px solid #E9EDF4 !important;\r\n}\r\n\r\n.cursor-pointer {\r\n  cursor: pointer;\r\n}\r\n\r\n.dropdown-menu {\r\n  display: none;\r\n}\r\n\r\n.dropdown-menu.show {\r\n  display: block;\r\n}\r\n\r\n.btn-header img {\r\n  width: 24px !important;\r\n  height: 24px !important;\r\n}\r\n\r\n\r\n.flag-item {\r\n    width: 24px;\r\n    height: 24px;\r\n}"],
+  "mappings": ";AAAA,CAAA;AACI,SAAA;AACA,UAAA;AACF,WAAA;AACA,eAAA;AACA,mBAAA;AACA,WAAA;AACA,iBAAA;AACA,UAAA,IAAA,MAAA;;AAGF,CAAA;AACE,UAAA;;AAGF,CAAA;AACE,WAAA;;AAGF,CAJA,aAIA,CAAA;AACE,WAAA;;AAGF,CAvBA,WAuBA;AACE,SAAA;AACA,UAAA;;AAIF,CAAA;AACI,SAAA;AACA,UAAA;;",
+  "names": []
+}

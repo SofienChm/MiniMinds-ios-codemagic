@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/features/event/event-participants/event-participants.scss"],
+  "sourcesContent": ["// Event participants styles\r\n.add-participant{\r\n    .card-header{\r\n        display: flex;\r\n        justify-content: space-between;\r\n        align-items: center;\r\n    }\r\n}\r\n\r\n::ng-deep {\r\n    .ng-select.form-input .ng-select-container {\r\n        border: 1px solid #e0e0e0 !important;\r\n        margin-bottom: 1rem;\r\n    }\r\n}"],
+  "mappings": ";AAEI,CAAA,gBAAA,CAAA;AACI,WAAA;AACA,mBAAA;AACA,eAAA;;AAKJ,UAAA,CAAA,SAAA,CAAA,WAAA,CAAA;AACI,UAAA,IAAA,MAAA;AACA,iBAAA;;",
+  "names": []
+}

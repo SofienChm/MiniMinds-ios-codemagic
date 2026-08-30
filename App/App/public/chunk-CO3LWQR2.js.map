@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/core/services/page-title.service.ts"],
+  "sourcesContent": ["import { Injectable } from '@angular/core';\r\nimport { BehaviorSubject } from 'rxjs';\r\n\r\n@Injectable({\r\n  providedIn: 'root'\r\n})\r\nexport class PageTitleService {\r\n  private titleSubject = new BehaviorSubject<string>('');\r\n  public title$ = this.titleSubject.asObservable();\r\n\r\n  setTitle(title: string): void {\r\n    this.titleSubject.next(title);\r\n  }\r\n\r\n  getTitle(): string {\r\n    return this.titleSubject.value;\r\n  }\r\n}"],
+  "mappings": ";;;;;;;;AAMM,IAAO,mBAAP,MAAO,kBAAgB;EACnB,eAAe,IAAI,gBAAwB,EAAE;EAC9C,SAAS,KAAK,aAAa,aAAY;EAE9C,SAAS,OAAa;AACpB,SAAK,aAAa,KAAK,KAAK;EAC9B;EAEA,WAAQ;AACN,WAAO,KAAK,aAAa;EAC3B;;qCAVW,mBAAgB;EAAA;4EAAhB,mBAAgB,SAAhB,kBAAgB,WAAA,YAFf,OAAM,CAAA;;;sEAEP,kBAAgB,CAAA;UAH5B;WAAW;MACV,YAAY;KACb;;;",
+  "names": []
+}

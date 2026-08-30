@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/features/auth/register/register.scss"],
+  "sourcesContent": [".consent-section {\n  border: 1px solid #dee2e6;\n\n  .form-check-label {\n    font-size: 0.9rem;\n\n    a {\n      color: #0d6efd;\n      text-decoration: underline;\n\n      &:hover {\n        color: #0a58ca;\n      }\n    }\n  }\n\n  .form-check-input:checked {\n    background-color: #198754;\n    border-color: #198754;\n  }\n}\n"],
+  "mappings": ";AAAA,CAAA;AACE,UAAA,IAAA,MAAA;;AAEA,CAHF,gBAGE,CAAA;AACE,aAAA;;AAEA,CANJ,gBAMI,CAHF,iBAGE;AACE,SAAA;AACA,mBAAA;;AAEA,CAVN,gBAUM,CAPJ,iBAOI,CAAA;AACE,SAAA;;AAKN,CAhBF,gBAgBE,CAAA,gBAAA;AACE,oBAAA;AACA,gBAAA;;",
+  "names": []
+}

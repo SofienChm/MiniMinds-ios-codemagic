@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/shared/components/language-switcher/language-switcher.component.ts"],
+  "sourcesContent": ["\n    .language-switcher {\n      display: flex;\n      align-items: center;\n    }\n    .btn.active {\n      background-color: #0d6efd;\n      color: white;\n    }\n  "],
+  "mappings": ";AACI,CAAA;AACE,WAAA;AACA,eAAA;;AAEF,CAAA,GAAA,CAAA;AACE,oBAAA;AACA,SAAA;;",
+  "names": []
+}

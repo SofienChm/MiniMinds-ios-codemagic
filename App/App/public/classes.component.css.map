@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/features/classes/classes.component.scss"],
+  "sourcesContent": [".title-table {\r\n  font-weight: 500;\r\n  color: #202C4B;\r\n}\r\n\r\n.badge-success {\r\n  background-color: rgba(26, 190, 23, 0.1);\r\n  color: #1ABE17;\r\n}\r\n\r\n.badge-secondary {\r\n  background-color: rgba(108, 117, 125, 0.1);\r\n  color: #6c757d;\r\n}\r\n\r\n.card-general {\r\n  .card-header  {\r\n    display: flex;\r\n    align-items: center;\r\n    i{\r\n      font-size: 22px;\r\n      color: #7dd3c0;\r\n      margin-right: 10px; \r\n     }\r\n  }\r\n}"],
+  "mappings": ";AAAA,CAAA;AACE,eAAA;AACA,SAAA;;AAGF,CAAA;AACE,oBAAA,KAAA,EAAA,EAAA,GAAA,EAAA,EAAA,EAAA;AACA,SAAA;;AAGF,CAAA;AACE,oBAAA,KAAA,GAAA,EAAA,GAAA,EAAA,GAAA,EAAA;AACA,SAAA;;AAIA,CAAA,aAAA,CAAA;AACE,WAAA;AACA,eAAA;;AACA,CAHF,aAGE,CAHF,YAGE;AACE,aAAA;AACA,SAAA;AACA,gBAAA;;",
+  "names": []
+}

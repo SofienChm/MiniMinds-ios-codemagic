@@ -1,0 +1,33 @@
+// src/app/core/interfaces/dto/tenant-dto.ts
+var FeatureCodes = {
+  // Core Features
+  DASHBOARD: "dashboard",
+  MESSAGES: "messages",
+  CALENDAR: "calendar",
+  CHILDREN: "children",
+  PARENTS: "parents",
+  TEACHERS: "teachers",
+  CLASSES: "classes",
+  ATTENDANCE: "attendance",
+  // Optional Features
+  DAILY_ACTIVITIES: "daily_activities",
+  GALLERY: "gallery",
+  EVENTS: "events",
+  HOLIDAYS: "holidays",
+  LEAVES: "leaves",
+  FEES: "fees",
+  STATIC_FEES: "static_fees",
+  FOOD_MENU: "food_menu",
+  QR_CHECKIN: "qr_checkin",
+  RECLAMATIONS: "reclamations",
+  LEARNING_GAMES: "learning_games",
+  AI_ASSISTANT: "ai_assistant",
+  BASIC_AI: "basic_ai",
+  APPOINTMENTS: "appointments",
+  CHAT: "chat"
+};
+
+export {
+  FeatureCodes
+};
+//# sourceMappingURL=chunk-MQPIBHSQ.js.map

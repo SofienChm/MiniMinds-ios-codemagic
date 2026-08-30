@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/features/holiday/edit-holiday/edit-holiday.component.scss"],
+  "sourcesContent": [".form-control-color {\r\n  width: 60px;\r\n  height: 38px;\r\n  padding: 0.375rem 0.5rem;\r\n}"],
+  "mappings": ";AAAA,CAAA;AACE,SAAA;AACA,UAAA;AACA,WAAA,SAAA;;",
+  "names": []
+}

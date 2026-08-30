@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/features/leaves/add-leave.scss"],
+  "sourcesContent": [".form-select {\r\n  border-color: #E9EDF4;\r\n  color: #202C4B;\r\n  background-color: #ffffff;\r\n  font-size: 14px;\r\n  font-weight: 400;\r\n  line-height: 1.6;\r\n  border-radius: 5px;\r\n  padding: 0.5rem 0.625rem;\r\n  height: 38px;\r\n  transition: all 0.5s;\r\n}\r\n\r\n.form-check-input {\r\n  border-color: #E9EDF4;\r\n  cursor: pointer;\r\n}\r\n\r\n.form-check-input:checked {\r\n  background-color: #506EE4;\r\n  border-color: #506EE4;\r\n}\r\n\r\n.form-check-label {\r\n  font-size: 14px;\r\n  font-weight: 400;\r\n  color: #202C4B;\r\n  cursor: pointer;\r\n}\r\n\r\n.alert {\r\n  font-size: 14px;\r\n  border-radius: 5px;\r\n}"],
+  "mappings": ";AAAA,CAAA;AACE,gBAAA;AACA,SAAA;AACA,oBAAA;AACA,aAAA;AACA,eAAA;AACA,eAAA;AACA,iBAAA;AACA,WAAA,OAAA;AACA,UAAA;AACA,cAAA,IAAA;;AAGF,CAAA;AACE,gBAAA;AACA,UAAA;;AAGF,CALA,gBAKA;AACE,oBAAA;AACA,gBAAA;;AAGF,CAAA;AACE,aAAA;AACA,eAAA;AACA,SAAA;AACA,UAAA;;AAGF,CAAA;AACE,aAAA;AACA,iBAAA;;",
+  "names": []
+}

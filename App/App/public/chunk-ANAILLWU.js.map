@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/shared/utils/swal.util.ts"],
+  "sourcesContent": ["import Swal from 'sweetalert2';\n\n/**\n * Show a success toast notification (top-end, auto-dismiss after 3s)\n */\nexport function showSuccessToast(title: string): void {\n  Swal.fire({\n    toast: true,\n    position: 'top-end',\n    icon: 'success',\n    title: title,\n    showConfirmButton: false,\n    timer: 3000,\n    timerProgressBar: true\n  });\n}\n"],
+  "mappings": ";;;;;;;;AAAA,yBAAiB;AAKX,SAAU,iBAAiB,OAAa;AAC5C,qBAAAA,QAAK,KAAK;IACR,OAAO;IACP,UAAU;IACV,MAAM;IACN;IACA,mBAAmB;IACnB,OAAO;IACP,kBAAkB;GACnB;AACH;",
+  "names": ["Swal"]
+}

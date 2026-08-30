@@ -1,0 +1,1 @@
+import{e as s}from"./chunk-Q6OK2OOV.js";import"./chunk-KZZABCGY.js";var n=class extends s{async enable(){return new Promise(e=>{e({status:"enable"})})}async disable(){return new Promise(e=>{e({status:"disable"})})}};export{n as CapacitorSwipeBackWeb};

@@ -1,0 +1,1 @@
+import{a as r}from"./chunk-ZITO452T.js";import{g as s}from"./chunk-KZZABCGY.js";var t=s(r());function e(o){t.default.fire({toast:!0,position:"top-end",icon:"success",title:o,showConfirmButton:!1,timer:3e3,timerProgressBar:!0})}export{e as a};

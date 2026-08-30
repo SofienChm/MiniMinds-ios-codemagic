@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/features/fee/add-fee/add-fee.component.scss"],
+  "sourcesContent": [".card {\r\n  border: none;\r\n  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);\r\n}\r\n\r\n.form-control:focus,\r\n.form-select:focus {\r\n  border-color: #86b7fe;\r\n  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);\r\n}\r\n\r\n.btn:disabled {\r\n  opacity: 0.65;\r\n}\r\n\r\n.spinner-border-sm {\r\n  width: 1rem;\r\n  height: 1rem;\r\n}\r\n\r\n.input-group-text {\r\n  background-color: #f8f9fa;\r\n  border-color: #ced4da;\r\n}\r\n\r\n@media (max-width: 768px) {\r\n  .card-body {\r\n    padding: 1rem;\r\n  }\r\n}\r\n\r\n@media (max-width: 380px) {\r\n  .card-add-pages .add-form .form-grid {\r\n    grid-template-columns: repeat(auto-fit, minmax(208px, 1fr));\r\n  }\r\n  .card-add-pages .add-form .form-grid .form-input {\r\n    font-size: 14px;\r\n    padding: 10px 10px 10px 40px;\r\n  }\r\n}"],
+  "mappings": ";AAAA,CAAA;AACE,UAAA;AACA,cAAA,EAAA,SAAA,QAAA,KAAA,CAAA,EAAA,CAAA,EAAA,CAAA,EAAA;;AAGF,CAAA,YAAA;AAAA,CAAA,WAAA;AAEE,gBAAA;AACA,cAAA,EAAA,EAAA,EAAA,QAAA,KAAA,EAAA,EAAA,GAAA,EAAA,GAAA,EAAA;;AAGF,CAAA,GAAA;AACE,WAAA;;AAGF,CAAA;AACE,SAAA;AACA,UAAA;;AAGF,CAAA;AACE,oBAAA;AACA,gBAAA;;AAGF,OAAA,CAAA,SAAA,EAAA;AACE,GAAA;AACE,aAAA;;;AAIJ,OAAA,CAAA,SAAA,EAAA;AACE,GAAA,eAAA,CAAA,SAAA,CAAA;AACE,2BAAA,OAAA,QAAA,EAAA,OAAA,KAAA,EAAA;;AAEF,GAHA,eAGA,CAHA,SAGA,CAHA,UAGA,CAAA;AACE,eAAA;AACA,aAAA,KAAA,KAAA,KAAA;;;",
+  "names": []
+}

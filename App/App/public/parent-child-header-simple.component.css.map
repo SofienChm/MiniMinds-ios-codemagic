@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/shared/components/parent-child-header-simple/parent-child-header-simple.component.scss"],
+  "sourcesContent": ["// Component-specific styles can be added here if needed\r\n.header-info {\r\n    display: flex;\r\n    align-items: center;\r\n    margin-bottom: 0px !important;\r\n    padding-top: env(safe-area-inset-top, 0px); // Safe area for iOS notch\r\n    \r\n    .name{\r\n        &.simple{\r\n            padding-bottom: 20px;\r\n        }\r\n    }\r\n\r\n    .header-actions {\r\n        margin-left: auto;\r\n        display: flex;\r\n        align-items: center;\r\n    }\r\n}"],
+  "mappings": ";AACA,CAAA;AACI,WAAA;AACA,eAAA;AACA,iBAAA;AACA,eAAA,IAAA,mBAAA,EAAA;;AAGI,CAPR,YAOQ,CAAA,IAAA,CAAA;AACI,kBAAA;;AAIR,CAZJ,YAYI,CAAA;AACI,eAAA;AACA,WAAA;AACA,eAAA;;",
+  "names": []
+}

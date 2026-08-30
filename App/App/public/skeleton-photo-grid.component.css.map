@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/shared/components/skeleton/skeleton-photo-grid.component.ts"],
+  "sourcesContent": ["\n    .photo-grid {\n      display: grid;\n      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));\n      gap: 20px;\n      padding: 20px 0;\n    }\n\n    .photo-item {\n      background: white;\n      border-radius: 12px;\n      overflow: hidden;\n      box-shadow: 0 2px 8px rgba(0,0,0,0.08);\n    }\n\n    .skeleton-photo {\n      animation: fadeIn 0.3s ease-out;\n    }\n\n    @keyframes fadeIn {\n      from {\n        opacity: 0;\n        transform: scale(0.95);\n      }\n      to {\n        opacity: 1;\n        transform: scale(1);\n      }\n    }\n\n    @media (max-width: 768px) {\n      .photo-grid {\n        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));\n        gap: 12px;\n      }\n    }\n  "],
+  "mappings": ";AACI,CAAA;AACE,WAAA;AACA,yBAAA,OAAA,SAAA,EAAA,OAAA,KAAA,EAAA;AACA,OAAA;AACA,WAAA,KAAA;;AAGF,CAAA;AACE,cAAA;AACA,iBAAA;AACA,YAAA;AACA,cAAA,EAAA,IAAA,IAAA,KAAA,CAAA,EAAA,CAAA,EAAA,CAAA,EAAA;;AAGF,CAAA;AACE,aAAA,OAAA,KAAA;;AAGF,WAHE;AAIA;AACE,aAAA;AACA,eAAA,MAAA;;AAEF;AACE,aAAA;AACA,eAAA,MAAA;;;AAIJ,OAAA,CAAA,SAAA,EAAA;AACE,GA9BF;AA+BI,2BAAA,OAAA,SAAA,EAAA,OAAA,KAAA,EAAA;AACA,SAAA;;;",
+  "names": []
+}

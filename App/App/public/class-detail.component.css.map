@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/features/classes/class-detail/class-detail.component.scss"],
+  "sourcesContent": [".frames {\r\n  background-color: #f8f9fa;\r\n}\r\n.badge-active {\r\n  background: rgba(26, 190, 23, 0.1);\r\n  color: #1ABE17;\r\n}\r\n.badge.bg-primary {\r\n  background-color: #e9ecef !important;\r\n  color: var(--text-color) !important;\r\n}\r\n.card-detail_pages .card-header {\r\n  border: 1px solid #E9EDF4 !important;\r\n}\r\n\r\n// Modal ng-select styles\r\n.modal {\r\n  .modal-content {\r\n    overflow: visible;\r\n  }\r\n\r\n  .modal-body {\r\n    overflow: visible;\r\n  }\r\n\r\n  ng-select {\r\n    .ng-dropdown-panel {\r\n      z-index: 1060 !important;\r\n    }\r\n  }\r\n}\r\n\r\n::ng-deep {\r\n  .ng-dropdown-panel {\r\n    z-index: 1060 !important;\r\n  }\r\n}"],
+  "mappings": ";AAAA,CAAA;AACE,oBAAA;;AAEF,CAAA;AACE,cAAA,KAAA,EAAA,EAAA,GAAA,EAAA,EAAA,EAAA;AACA,SAAA;;AAEF,CAAA,KAAA,CAAA;AACE,oBAAA;AACA,SAAA,IAAA;;AAEF,CAAA,kBAAA,CAAA;AACE,UAAA,IAAA,MAAA;;AAKA,CAAA,MAAA,CAAA;AACE,YAAA;;AAGF,CAJA,MAIA,CAAA;AACE,YAAA;;AAIA,CATF,MASE,UAAA,CAAA;AACE,WAAA;;AAMJ,UAAA,CAPE;AAQA,WAAA;;",
+  "names": []
+}

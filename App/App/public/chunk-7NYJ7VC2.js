@@ -1,0 +1,1 @@
+import{W as r,g as i}from"./chunk-WUSJIJR6.js";var o=class t{titleSubject=new i("");title$=this.titleSubject.asObservable();setTitle(e){this.titleSubject.next(e)}getTitle(){return this.titleSubject.value}static \u0275fac=function(c){return new(c||t)};static \u0275prov=r({token:t,factory:t.\u0275fac,providedIn:"root"})};export{o as a};
